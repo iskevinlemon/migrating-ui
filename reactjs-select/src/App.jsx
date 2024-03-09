@@ -34,7 +34,7 @@ function App() {
               data-toggle="dropdown"
             >
               {selectedCountry != "" && 
-                <img src={`src/icons/${selectedCountry}.png`}
+                <img src={`icons/${selectedCountry}.png`}
                     className="ml-2 mr-2"
                     width="20" 
                     alt={`Logo of ${selectedCountry}`}
@@ -55,7 +55,7 @@ function App() {
                   key={country.id}
                   onClick={(e) => setSelectedCountry(country.value)}
                 >
-                  <img src={`src/${country.iconUrl}`} width={20} className="mr-2"/>
+                  <img src={`${country.iconUrl}`} width={20} className="mr-2"/>
                   {country.value}
                 </a>
               ))}
